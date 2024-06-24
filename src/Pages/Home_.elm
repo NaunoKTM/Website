@@ -87,7 +87,8 @@ view : Model -> View Msg
 view model =
     { title = "Home"
     , body =
-        [ Html.text "lol"
+        [ Element.layout [ centerX ] <|
+            homePage model
         ]
     }
 
